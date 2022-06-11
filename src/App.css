@@ -1,38 +1,88 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.taskListContainer{
+  margin: 5rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+  align-items: flex-start;
+  width: 80rem;
+  margin-bottom: 50%; 
+  /* min-height: 50rem; */
+  /* background: #f2f2f2;
 
-.App-link {
-  color: #61dafb;
-}
+  border-radius: 20px; */
+  /* box-shadow: 0 0 20px 8px #d0d0d0; */
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
+.taskForm{
+  display: flex;
+  background: #f2f2f2;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 20px 8px #d0d0d0;
+  font-size: 2rem;
+  padding: 1rem;
+  margin:1rem ;
+  border: 1px solid #f2f2f2; 
+  gap:1rem;
+
+}
+.taskText{
+  font-size: 3.5rem;
+  border: 1px solid #f2f2f2; 
+  border-radius: 5px;
+}
+.taskForm input::placeholder{
+  font-size: 2rem;
+}
+.btn{
+  border: 0px;
+  border-radius: 5px;
+  background-color: #fff;
+  cursor: pointer;
+  font-weight: 600;
+}
+.btn:hover{
+  border: 1px solid #1c1a1a; 
+  font-weight: 600;
+}
+.task-div{
+  box-shadow: 0 0 20px 8px #d0d0d0;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 69%;
+  background: #fff;
+  margin: 1rem;
+  border-radius: 10px;
+
+
+}
+.task-text{  font-size: 2rem;}
+.icons{
+  display: flex;
+  gap:3rem;
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+.complete{
+  text-decoration: line-through;
+  opacity: 0.5;
+  background-color: green;
+  color: #fff;
+}
+.hide{
+  display: none;
+}
+.footer{
+
+  width: 100%;
+  bottom: 0;
+  color: black;
+  margin-top: 10%;
+  font-size: 1.5rem;
+  position: static;
+  text-align: center;
+
+  }
+  
