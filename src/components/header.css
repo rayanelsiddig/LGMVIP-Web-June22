@@ -1,0 +1,8 @@
+.navbar{
+    padding: 20px;
+    font-size: 2rem;
+  }
+
+.navbar-dark .navbar-brand {
+    font-size: 2rem;
+}
